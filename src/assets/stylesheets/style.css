@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: "Quicksand";
+	/* outline: 1px solid pink; */
+	text-align: center;
+}
+
+.App {
+	margin: 0;
+}
+
+.Home,
+.Quiz,
+.Results {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	align-items: center;
+	text-align: center;
+}
+
+.Leaderboard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 40vh;
+	align-items: center;
+	text-align: center;
+}
+
+img {
+	width: 300px;
+	pointer-events: none;
+}
+
+img.unselectable {
+	/* user-drag: none; */
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.btn {
+	min-width: 100px;
+}
+
+.other-games.home,
+.main-menu.leaderboard {
+	position: absolute;
+	top: 2%;
+	left: 2%;
+}
+
+.updates {
+	position: absolute;
+	bottom: 2%;
+	left: 2%;
+}
+
+.leaderboard.home {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	color: rgb(13, 202, 240);
+}
+
+.form-select {
+	color: rgb(13, 202, 240);
+	border: 1px solid rgb(13, 202, 240);
+}
+
+div span.leaderboard,
+div span.other-games {
+	font-weight: bold;
+	color: black;
+	font-size: 18px;
+}
+
+select {
+	cursor: pointer;
+}
+
+select:hover {
+	background-color: rgb(13, 202, 240);
+	color: black;
+}
+
+select option {
+	background-color: white;
+}
+
+#timer {
+	font-size: 30px;
+	font-weight: bold;
+	color: green;
+	border: 3px solid green;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 15%;
+}
+
+.Leaderboard {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../images/confetti.gif');
+	background-size: cover;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+table {
+	border: 3px solid black;
+}
+
+th, tr, td {
+	width: 150px;
+	border: 1px solid black;
+}
+
+th {
+	border: 2px 1px solid black;
+	padding: 5px;
+}
+
+td {
+	padding: 10px;
+}
+
+div.Results > div.container {
+	background-image: url('../images/confetti.gif');
+}
+
+button.choices {
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+	background-color: white;
+	border-radius: 8px;
+}
+
+button.choices:hover {
+	background-color: rgba(17, 36, 209, 0.788);
+	color: white;
+	font-weight: bold;
+	border: 2px solid rgba(17, 36, 209, 0.788);
+}
